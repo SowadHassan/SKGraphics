@@ -1,12 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./components/home/home";
-import AboutUs from './components/aboutus/aboutus'
+import AboutUs from "./components/aboutus/aboutus";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Contact from "./components/contact/contact";
+import Demos from "./components/demos/demos";
 
 function App() {
   return (
@@ -28,12 +30,13 @@ function App() {
         <Home />
       </header> */}
       <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/aboutus" component={AboutUs} />
-      </Switch>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/aboutus" component={AboutUs} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/demos" component={Demos} />
+        </Switch>
       </BrowserRouter>
-      {/* <Home /> */}
     </div>
   );
 }

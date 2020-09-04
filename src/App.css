@@ -64,6 +64,17 @@ footer p {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.masthead {
+  margin-bottom: 2rem;
+}
 
 @keyframes App-logo-spin {
   from {
