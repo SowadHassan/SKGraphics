@@ -10,7 +10,7 @@ function Home() {
         src={back}
         alt="Girl in a jacket"
         width="100%"
-        height="950px"
+        height="auto"
       />
     </>
   );
